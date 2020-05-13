@@ -1,0 +1,12 @@
+{% import "_includes/forms" as forms %}
+
+{% block content %}
+{{ forms.textField({
+    label: "User limit",
+    instructions: "Limit of user's downloads per month",
+    id: "limit",
+    name: "limit",
+    value: settings['limit']
+})
+}}
+{% endblock %}

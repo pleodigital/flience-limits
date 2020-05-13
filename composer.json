@@ -1,0 +1,40 @@
+{
+    "name": "flience/users-limit",
+    "description": "Limit user to download 20 wallpapers per month",
+    "type": "craft-plugin",
+    "version": "1.0.11",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "users limit"
+    ],
+    "support": {
+        "docs": "https://github.com/pleodigital/flience-limits/users-limit/blob/master/README.md",
+        "issues": "https://github.com/pleodigital/flience-limits/users-limit/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pleodigital",
+            "homepage": "https://flience.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "flience\\userslimit\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Users Limit",
+        "handle": "users-limit",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/https://github.com/pleodigital/flience-limits/users-limit/master/CHANGELOG.md",
+        "class": "flience\\userslimit\\UsersLimit"
+    }
+}
